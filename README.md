@@ -1,5 +1,15 @@
 # vue-ts-boilerplate
 
+A preconfigured Vue boilerplate ✌️
+
+Features:
+- TypeScript
+- Vue Router
+- Sass
+- Jest (Unit Testing)
+- ESLint + Airbnb Config
+- Prettier
+
 ## Project setup
 ```
 npm install
@@ -25,5 +35,28 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## IDE Settings
+
+Install following extensions in VS Code:
+- Vetur
+- Prettier
+- ESLint
+
+Settings:
+
+```
+ "vetur.validation.template": false,
+    "eslint.validate": [
+        "javascript",
+        "vue",
+        "html"
+    ],
+    "eslint.run": "onSave",
+    "eslint.enable": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+```
