@@ -10,6 +10,35 @@ Features:
 - ESLint + Airbnb Config
 - Prettier
 
+## IDE Settings
+
+Install following extensions in VS Code:
+- Vetur
+- Prettier
+- ESLint
+
+Settings:
+
+```
+  "vetur.validation.template": false,
+  "vetur.format.enable": false,
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.defaultFormatter.ts": "none",
+  "javascript.format.enable": false,
+  "eslint.validate": ["javascript", "vue", "html"],
+  "eslint.run": "onType",
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },  
+```
+
 ## Project setup
 ```
 npm install
@@ -33,30 +62,4 @@ npm run test:unit
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-## IDE Settings
-
-Install following extensions in VS Code:
-- Vetur
-- Prettier
-- ESLint
-
-Settings:
-
-```
- "vetur.validation.template": false,
-    "eslint.validate": [
-        "javascript",
-        "vue",
-        "html"
-    ],
-    "eslint.run": "onSave",
-    "eslint.enable": true,
-    "eslint.format.enable": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    }
 ```
